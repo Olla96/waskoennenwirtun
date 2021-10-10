@@ -1,5 +1,7 @@
 /* farben #E0DC48
-#F2E457 */
+#F2E457
+#164A07
+*/
 
 
 * {
@@ -39,6 +41,7 @@ html {
 }
 
 @media (max-width: 425px) {
+  #nav { position: absolute; }
   .col { width: 100%; }
   .container { width: 95%; }
   .flex-container { min-height: 5%; }
@@ -79,15 +82,15 @@ h1 {
 }
 
 @media (max-width: 1024px) {
+  #header_container { margin-top: 10%; }
   .header_col { width: 100%;
                 display: grid;
-                justify-content: center;
-                margin-top: 3%;}
+                justify-content: center;}
   .header_col2 {width: 100%; }
 }
 
 @media (max-width: 425px) {
-  .header_col { margin-top: 12%; }
+  #header_container { margin-top: 15%; }
 }
 
 /* ---------Navigationsleiste------------ */
@@ -107,7 +110,7 @@ h1 {
   padding-right: 2%;
 }
 .homebutton:hover {
-  background-color: #a0c864;
+  background-color: rgba(108, 117, 125, 0.5);
 }
 #nav {
   top: 0;
@@ -124,8 +127,8 @@ h1 {
   position: fixed;
   width: 48px;
   height: 48px;
-  right: 1%;
-  bottom: 2%;
+  right: 5px;
+  bottom: 5px;
 }
 .jumper_icon {
   opacity: 0.5;
@@ -161,5 +164,5 @@ button {
   border-radius: 10%;
 }
 button:hover {
-  background-color: #E0DC48;
+  background-color: rgba(108, 117, 125, 0.5);
 }
