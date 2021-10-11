@@ -91,7 +91,8 @@ h1 {
 }
 
 @media (max-width: 425px) {
-  #header_container { margin-top: 15%; }
+  #header_container { margin-top: 5%;
+                      width: 90%; }
 }
 
 /* ---------Navigationsleiste------------ */
@@ -131,6 +132,7 @@ h1 {
   height: 48px;
   right: 5px;
   bottom: 5px;
+  outline: none;
 }
 .jumper_icon {
   opacity: 0.5;
@@ -166,6 +168,7 @@ button {
   border-top: none;
   border-right: none;
   border-left: none;
+  outline: none;
 }
 button:hover {
   border: 1px solid #ced4da;
