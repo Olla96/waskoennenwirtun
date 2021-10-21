@@ -12,7 +12,8 @@ body {
   margin: 0;
 }
 html {
-  background-color: #ABC799;
+  background-color: #2f2f2f;
+  color: #d5d5d5;
 }
 
 
@@ -57,7 +58,7 @@ html {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
-  background-color: #ffffff;
+  background-color: #383838;
   margin-top: 5%;
   margin-bottom: 5%;
   padding: 1%;
@@ -103,12 +104,12 @@ h1 {
   align-items: center;
   width: 100%;
   height: 50px;
-  background-color: rgba(108, 117, 125, 0.5);
+  background-color: #383838;
   z-index: 1;
 }
 .homebutton {
   text-decoration: none;
-  color: black;
+  color: #d5d5d5;
   padding-left: 2%;
   padding-right: 2%;
 }
@@ -127,7 +128,7 @@ h1 {
 /* Jumper */
 
 .jumper {
-  background-color: rgba(108, 117, 125, 0.5);
+  background-color: rgba(56, 56, 56, 0.9);
   text-decoration: none;
   position: fixed;
   width: 48px;
@@ -142,7 +143,7 @@ h1 {
   width: 100%;
 }
 .jumper:hover {
-  background-color: rgba(108, 117, 125, 0.8);
+  background-color: rgba(56, 56, 56, 1.0);
 }
 .jumper_icon:hover {
   opacity: 0.8;
@@ -153,27 +154,28 @@ h1 {
   margin-bottom: 0;
 }
 .ueberschrift > h2 {
-background-color: rgba(108, 117, 125, 0.5);
+background-color: rgba(148, 199, 86, 0.7);
 margin-bottom: 0;
 }
 .unterschrift {
   padding: 5% 5% 5% 5%;
-  background-color: #ffffff;
+  background-color: #383838;
 }
 .unterschrift > p {
   text-align: left;
   margin-top: 0;
 }
 button {
-  background-color: #ffffff;
-  border-bottom: 1px solid #ced4da;
+  background-color: #383838;
+  border-bottom: 1px solid #d5d5d5;
   border-top: none;
   border-right: none;
   border-left: none;
   outline: none;
+  color: #d5d5d5;
 }
 button:hover {
-  border: 1px solid #ced4da;
+  border: 1px solid #d5d5d5;
 }
 
 /* --------- Impressum ----------- */
