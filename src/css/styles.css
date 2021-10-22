@@ -111,6 +111,8 @@ h1 {
   color: #d5d5d5;
   padding-left: 2%;
   padding-right: 2%;
+
+
 }
 .homebutton:hover {
   font-size: 105%;
@@ -123,6 +125,21 @@ h1 {
   position: absolute;
   bottom: 0;
 }
+.lightmodebutton {
+  background-color: #383838;
+  width: 24px;
+  height: 24px;
+  border: none;
+}
+.lightmodebutton:hover {
+  width: 26px;
+  height: 26px;
+}
+#hoverimg:hover {
+  width: 26px;
+  height: 26px;
+}
+
 
 /* Jumper */
 
@@ -164,7 +181,7 @@ margin-bottom: 0;
   text-align: left;
   margin-top: 0;
 }
-button {
+.button {
   background-color: #383838;
   border-bottom: 1px solid #d5d5d5;
   border-top: none;
@@ -173,7 +190,7 @@ button {
   outline: none;
   color: #d5d5d5;
 }
-button:hover {
+.button:hover {
   border: 1px solid #d5d5d5;
 }
 
