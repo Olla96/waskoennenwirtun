@@ -17,7 +17,7 @@
 
 		<nav class="flex-container">
 			<a class="homebutton" href="#">waskönnenwirtun.de</a>
-			<button class="lightmodebutton">
+			<button class="lightmodebutton" onclick="lightmode()">
 				<img id="hoverimg" src="src/img/light_mode_white_24dp.svg" alt="Eine Sonne um auf den Lightmode umzuschalten">
 			</button>
 		</nav>
@@ -291,5 +291,10 @@
 				<a class="homebutton" href="impressum.html">Impressum</a>
 		</footer>
 	</body>
-
+<script>
+function lightmode() {
+ var test = document.documentElement;
+ test.classList.toggle("lightmode");
+}
+</script>
 </html>
