@@ -14,9 +14,9 @@ body {
   --imgSun: url("../img/light_mode_white_24dp.svg");
 
 /*lightmode*/
-  --lightgreen: #76D948;
-  --lighterBg: #E6DECE;
-  --lightBg: #E6CFA3;
+  --lightgreen: #94c756;
+  --lighterBg: #ffffff;
+  --lightBg: #f5f5e9;
   --black: black;
   --imgMoon: url("../img/dark_mode_black_24dp.svg");
 
@@ -221,6 +221,7 @@ margin-bottom: 0;
 #img {
   background-image: var(--modeIcon);
   background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 
