@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>testtesttest</title>
+		<title>waskönnenwirtun.de</title>
 		<link rel="stylesheet" type="text/css" href="src/css/styles.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -291,10 +291,26 @@
 				<a class="homebutton" href="impressum.html">Impressum</a>
 		</footer>
 	</body>
+
 <script>
-function lightmode() {
- var test = document.documentElement;
- test.classList.toggle("lightmode");
+var aufruf = document.documentElement;
+var switcher = true;
+
+if (switcher == true) {
+ aufruf.classList.toggle("darkmode");
 }
+</script>
+
+<script>
+	function lightmode() {
+		var switchModi = document.documentElement;
+		if (switchModi.classList[0] == "darkmode") {
+			switchModi.classList.remove("darkmode");
+			switchModi.classList.add("lightmode");
+		} else {
+			switchModi.classList.remove("lightmode");
+			switchModi.classList.add("darkmode");
+		}
+	}
 </script>
 </html>
