@@ -17,9 +17,7 @@
 
 		<nav class="flex-container">
 			<a class="homebutton" href="#">waskönnenwirtun.de</a>
-			<button class="lightmodebutton" onclick="lightmode()">
-				<img id="hoverimg" src="src/img/light_mode_white_24dp.svg" alt="Eine Sonne um auf den Lightmode umzuschalten">
-			</button>
+			<button id="img" class="lightmodebutton" onclick="lightmode()"></button>
 		</nav>
 
 <!-- Jumper -->
@@ -33,7 +31,7 @@
 
 <header id="header_container" class="clearfix">
 	<div class="header_col">
-		<img src="src/img/klimawandel1.svg" alt="Eine Weltkugel mit Menschen welche die Welt reparieren">
+		<img id="mainImg" src="src/img/klimawandel1.svg" alt="Eine Weltkugel mit Menschen welche die Welt reparieren">
 	</div>
 	<div class="header_col2">
 		<h1>Lorem ipsum dolor sit amet</h1>
@@ -304,12 +302,15 @@ if (switcher == true) {
 <script>
 	function lightmode() {
 		var switchModi = document.documentElement;
+
 		if (switchModi.classList[0] == "darkmode") {
 			switchModi.classList.remove("darkmode");
 			switchModi.classList.add("lightmode");
+			document.getElementById("mainImg").src="src/img/klimawandel1a.svg";
 		} else {
 			switchModi.classList.remove("lightmode");
 			switchModi.classList.add("darkmode");
+			document.getElementById("mainImg").src="src/img/klimawandel1.svg";
 		}
 	}
 </script>

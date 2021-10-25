@@ -11,23 +11,33 @@ body {
   --whiteColor: #d5d5d5;
   --lightdarkBg: #383838;
   --green: rgba(148, 199, 86, 0.7);
-/*lightmodeFarben*/
+  --imgSun: url("../img/light_mode_white_24dp.svg");
+
+/*lightmode*/
   --lightgreen: #76D948;
   --lighterBg: #E6DECE;
   --lightBg: #E6CFA3;
   --black: black;
+  --imgMoon: url("../img/dark_mode_black_24dp.svg");
+
 }
 .lightmode {
   --bgColor: var(--lighterBg);
   --fontColor: var(--black);
   --containerBg: var(--lightBg);
   --headingBg: var(--lightgreen);
+  --modeIcon: var(--imgMoon);
+  transition: 0.8s;
+
 }
 .darkmode {
   --bgColor: var(--darkBg);
   --fontColor: var(--whiteColor);
   --containerBg: var(--lightdarkBg);
   --headingBg: var(--green);
+  --modeIcon: var(--imgSun);
+  transition: 0.8s;
+
 }
 
 html {
@@ -127,7 +137,7 @@ h1 {
 }
 .homebutton {
   text-decoration: none;
-  color: #d5d5d5;
+  color: var(--fontColor);
   padding-left: 2%;
   padding-right: 2%;
 
@@ -198,16 +208,21 @@ margin-bottom: 0;
 }
 .button {
   background-color: var(--containerBg);
-  border-bottom: 1px solid #d5d5d5;
+  border-bottom: 1px solid var(--fontColor);
   border-top: none;
   border-right: none;
   border-left: none;
   outline: none;
-  color: #d5d5d5;
+  color: var(--fontColor);
 }
 .button:hover {
-  border: 1px solid #d5d5d5;
+  border: 1px solid var(--fontColor);
 }
+#img {
+  background-image: var(--modeIcon);
+  background-repeat: no-repeat;
+}
+
 
 /* --------- Impressum ----------- */
 
