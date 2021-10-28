@@ -27,7 +27,7 @@ body {
   --containerBg: var(--lightBg);
   --headingBg: var(--lightgreen);
   --modeIcon: var(--imgMoon);
-  /* transition: 0.8s; */
+
 
 }
 .darkmode {
@@ -36,7 +36,7 @@ body {
   --containerBg: var(--lightdarkBg);
   --headingBg: var(--green);
   --modeIcon: var(--imgSun);
-  /* transition: 0.8s; */
+
 
 }
 
