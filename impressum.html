@@ -35,4 +35,15 @@
 		</footer>
 	</body>
 
+
+<script>
+console.log(localStorage.mode);
+var aufruf = document.documentElement;
+
+ if (localStorage.mode == "darkmode") {
+	 aufruf.classList.toggle("darkmode");
+ } else {
+	 aufruf.classList.toggle("lightmode");
+ }
+</script>
 </html>

@@ -291,12 +291,16 @@
 	</body>
 
 <script>
-var aufruf = document.documentElement;
-var switcher = true;
+var ersterAufruf = document.documentElement;
+console.log(localStorage.mode);
+	if (localStorage.mode == "darkmode") {
+		ersterAufruf.classList.toggle("darkmode");
+	} else if (localStorage.mode == "lightmode") {
+		ersterAufruf.classList.toggle("lightmode");
+	} else {
+		ersterArufruf.classList.toggle("darkmode");
+	}
 
-if (switcher == true) {
- aufruf.classList.toggle("darkmode");
-}
 </script>
 
 <script>
@@ -307,11 +311,22 @@ if (switcher == true) {
 			switchModi.classList.remove("darkmode");
 			switchModi.classList.add("lightmode");
 			document.getElementById("mainImg").src="src/img/klimawandel1a.svg";
+			// Speichern vom Darkmode mit aufrufen der Klasse
+			localStorage.setItem("mode", switchModi.classList[0]);
+			console.log(localStorage.mode);
 		} else {
 			switchModi.classList.remove("lightmode");
 			switchModi.classList.add("darkmode");
 			document.getElementById("mainImg").src="src/img/klimawandel1.svg";
+			// Speichern vom Lightmode mit aufrufen der Klasse
+			localStorage.setItem("mode", switchModi.classList[0]);
+			console.log(localStorage.mode);
 		}
 	}
 </script>
+
+<!-- <script>
+	localStorage.setItem("test", "Was geht Bruder!");
+	console.log(localStorage.test);
+</script> -->
 </html>
