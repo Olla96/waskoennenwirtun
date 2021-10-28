@@ -82,7 +82,7 @@ html {
   clear: both;
   display: block;
 }
-/* -------------header-Grid---------------- */
+/* -------------header----------------- */
 #header_container {
   width: 85%;
   margin-left: auto;
@@ -91,6 +91,7 @@ html {
   margin-top: 5%;
   margin-bottom: 5%;
   padding: 1%;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .header_col {
@@ -193,14 +194,24 @@ h1 {
 
 .ueberschrift {
   margin-bottom: 0;
+  background-color: var(--headingBg);
+  display: flex;
+  min-height: 70px;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .ueberschrift > h2 {
-background-color: var(--headingBg);
-margin-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+
 }
 .unterschrift {
   padding: 5% 5% 5% 5%;
   background-color: var(--containerBg);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .unterschrift > p {
   text-align: left;
