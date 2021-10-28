@@ -297,6 +297,8 @@ console.log(localStorage.mode);
 		ersterAufruf.classList.toggle("darkmode");
 	} else if (localStorage.mode == "lightmode") {
 		ersterAufruf.classList.toggle("lightmode");
+		//mainImg wird leider nicht in Klassen lightmode bzw. darkmode geändert, easy fix: 
+		document.getElementById("mainImg").src="src/img/klimawandel1a.svg";
 	} else {
 		ersterAufruf.classList.toggle("darkmode");
 	}
