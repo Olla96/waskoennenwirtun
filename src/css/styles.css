@@ -242,28 +242,42 @@ h1 {
 /* --------- Impressum ----------- */
 
 .impressum {
-  width: 80%;
+  width: 50%;
   background-color: var(--containerBg);
-  background-image: url("../img/klimawandel2.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 22%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10%;
   padding: 1%;
   text-align: center;
-  color: #d5d5d5;
-}
-.impressum > p {
-  margin-top: 0;
-}
-.impressum > h2, h3, h4 {
-  margin-bottom: 0;
-  margin-top: 0;
-}
-#abstand {
-  margin-top: 180px;
+  color: var(--fontColor);
 }
 @media (max-width: 425px) {
   .impressum { margin-top: 5%; }
+}
+
+/*------------ Artikel ------------*/
+.containerArticle {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  background-color: var(--containerBg);
+  padding: 10px 10px 10px 10px;
+}
+
+section {
+  border-top: 2px solid var(--fontColor);
+  margin-top: 3%;
+}
+.scrollmenu::-webkit-scrollbar {
+  background-color: #333;
+  overflow: scroll;
+  white-space: nowrap;
+}
+@media (max-width: 1024px) {
+  .containerArticle { width: 90%; }
+  #footer_impressum {
+    position: relative;
+    margin-top: 3%;
+  }
 }
