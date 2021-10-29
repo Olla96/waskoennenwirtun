@@ -43,7 +43,7 @@
 
 		<main>
 	    <div class="container clearfix">
-	      <div class="row clearfix">
+	      <div class="row">
 	        <div class="col">
 						<div class="ueberschrift">
 							<h2>#1 Weniger Fleisch konsumieren!</h2>
@@ -78,13 +78,13 @@
 						</div>
 				</div>
 	      </div>
-	      <div class="row clearfix">
+	      <div class="row">
 	        <div class="col">
 						<div class="ueberschrift">
 							<h2>#4 AD-Blocker nutzen!</h2>
 						</div>
 						<div class="unterschrift">
-							<p>Die ist eine kleine Beschreibung des Themas. Zusätzlich gibt es hier einen Button, um zum größeren Artikel zu gelangen!</p>
+							<p>Werbung umgibt uns überall. Nur im Internet wird dafür reichlich Bandbreite bereitgestellt. Mit Hilfe eines Ad-Blockers kann Werbung unterdrückt werden.</p>
 							<a href="article.html">
 								<button class="button" type="button" name="button">mehr erfahren</button>
 							</a>
@@ -113,7 +113,7 @@
 						</div>
 					</div>
 	      </div>
-				<div class="row clearfix">
+				<div class="row">
 	        <div class="col">
 						<div class="ueberschrift">
 							<h2>#7 Vom Standby-Modus verabschieden!</h2>
@@ -147,7 +147,7 @@
 						</div>
 				</div>
 			</div>
-				<div class="row clearfix">
+				<div class="row">
 	        <div class="col">
 						<div class="ueberschrift">
 							<h2>#10 Gebraucht kaufen!</h2>
@@ -182,7 +182,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row clearfix">
+				<div class="row">
 	        <div class="col">
 						<div class="ueberschrift">
 							<h2>#13 Garten/Balkon richtig bepflanzen!</h2>
@@ -217,7 +217,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row clearfix">
+				<div class="row">
 	        <div class="col">
 						<div class="ueberschrift">
 							<h2>#16 Runter vom Gas!</h2>
@@ -252,7 +252,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row clearfix">
+				<div class="row">
 	        <div class="col">
 						<div class="ueberschrift">
 							<h2>#19 Recylingpapier kaufen!</h2>
@@ -296,7 +296,6 @@
 
 <script>
 var ersterAufruf = document.documentElement;
-console.log(localStorage.mode);
 	if (localStorage.mode == "darkmode") {
 		ersterAufruf.classList.toggle("darkmode");
 	} else if (localStorage.mode == "lightmode") {
@@ -319,20 +318,13 @@ console.log(localStorage.mode);
 			document.getElementById("mainImg").src="src/img/klimawandel1a.svg";
 			// Speichern vom Darkmode mit aufrufen der Klasse
 			localStorage.setItem("mode", switchModi.classList[0]);
-			console.log(localStorage.mode);
 		} else {
 			switchModi.classList.remove("lightmode");
 			switchModi.classList.add("darkmode");
 			document.getElementById("mainImg").src="src/img/klimawandel1.svg";
 			// Speichern vom Lightmode mit aufrufen der Klasse
 			localStorage.setItem("mode", switchModi.classList[0]);
-			console.log(localStorage.mode);
 		}
 	}
 </script>
-
-<!-- <script>
-	localStorage.setItem("test", "Was geht Bruder!");
-	console.log(localStorage.test);
-</script> -->
 </html>

@@ -52,9 +52,6 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
-.row {
-  margin-top: 2%;
-}
 
 .col {
   float: left;
@@ -62,7 +59,7 @@ html {
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
-  margin-top: 1%;
+  margin-top: 3%;
 }
 
 @media (max-width: 1024px) {
@@ -75,7 +72,8 @@ html {
 
 @media (max-width: 425px) {
   #nav { position: absolute; }
-  .col { width: 100%; }
+  .col { width: 100%;
+          margin-top: 10%; }
   .container { width: 95%; }
   .flex-container { min-height: 5%; }
 }
@@ -262,7 +260,7 @@ h1 {
   margin-right: auto;
   margin-top: 3%;
   background-color: var(--containerBg);
-  padding: 10px 10px 10px 10px;
+  padding: 3%;
 }
 
 section {
